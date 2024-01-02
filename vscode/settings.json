@@ -1,0 +1,23 @@
+{
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<tab>"],
+            "after": ["g", "t"]
+        },
+        {
+            "before": ["<s-tab>"],
+            "after": ["g", "T"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-j>": false,
+        "<C-p>": false
+    },
+    "explorer.confirmDelete": false,
+    "editor.cursorStyle": "block",
+    "extensions.ignoreRecommendations": true,
+    "redhat.telemetry.enabled": false,
+    "git.openRepositoryInParentFolders": "always"
+}
+
