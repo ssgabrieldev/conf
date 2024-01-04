@@ -11,13 +11,11 @@
     ],
     "vim.handleKeys": {
         "<C-b>": false,
-        "<C-j>": false,
-        "<C-p>": false
+        "<C-j>": false
     },
     "explorer.confirmDelete": false,
     "editor.cursorStyle": "block",
     "extensions.ignoreRecommendations": true,
-    "redhat.telemetry.enabled": false,
     "git.openRepositoryInParentFolders": "always"
 }
 
