@@ -96,7 +96,7 @@ local plugins = {
 							separator = true,
 						},
 						{
-							filetype = "dapui_watches",
+							filetype = "dapui_scopes",
 							text = "Debugger",
 							text_align = "center",
 							separator = true,
