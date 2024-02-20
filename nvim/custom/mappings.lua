@@ -18,6 +18,7 @@ M.general = {
 			function()
 				require("dap").continue()
 			end,
+      "dap continue"
 		},
 		["<leader>db"] = {
 			function()
