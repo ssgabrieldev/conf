@@ -3,6 +3,10 @@ local M = {}
 M.disabled = {
 	t = {
 		["<c-x>"] = "",
+		["<c-j>"] = "",
+	},
+	n = {
+		["<c-j>"] = "",
 	},
 }
 
@@ -18,7 +22,7 @@ M.general = {
 			function()
 				require("dap").continue()
 			end,
-      "dap continue"
+			"dap continue",
 		},
 		["<leader>db"] = {
 			function()
@@ -38,7 +42,7 @@ M.general = {
 			end,
 			"Float dap element",
 		},
-		["<a-j>"] = {
+		["<c-j>"] = {
 			":ToggleTerm direction=float<CR>",
 			"toggle terminal",
 		},
@@ -47,7 +51,7 @@ M.general = {
 		[">"] = { ">gv", "indent" },
 	},
 	t = {
-		["<a-j>"] = {
+		["<c-j>"] = {
 			"<cmd>ToggleTerm<CR>",
 			"toggle terminal",
 		},
