@@ -38,7 +38,7 @@ M.general = {
 			"Float dap element",
 		},
 		["<a-j>"] = {
-			":ToggleTerm<CR>",
+			":ToggleTerm direction=float<CR>",
 			"toggle terminal",
 		},
 	},
