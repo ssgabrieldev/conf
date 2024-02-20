@@ -73,10 +73,42 @@ local plugins = {
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
+		lazy = false,
 		config = function()
 			require("toggleterm").setup()
 		end,
-    lazy = false
+	},
+
+	{
+		"akinsho/bufferline.nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+		lazy = false,
+		config = function()
+			require("bufferline").setup({
+				options = {
+					offsets = {
+						{
+							filetype = "NvimTree",
+							text = "File Explorer",
+							text_align = "center",
+							separator = true,
+						},
+						{
+							filetype = "dapui_watches",
+							text = "Debugger",
+							text_align = "center",
+							separator = true,
+						},
+					},
+					diagnostics = "nvim_lsp",
+					indicator = {
+						style = "none",
+					},
+				},
+			})
+		end,
 	},
 }
 

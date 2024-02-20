@@ -4,7 +4,9 @@ M.disabled = {
 	t = {
 		["<C-x>"] = "",
 		["<C-j>"] = "",
-	}
+    ["<S-tab>"] = "",
+    ["<TAB>"] = ""
+	},
 }
 
 M.general = {
@@ -39,10 +41,17 @@ M.general = {
 			end,
 			"Float dap element",
 		},
-		["<c-j>"] = {
+		["<C-j>"] = {
 			":ToggleTerm direction=float<CR>",
 			"toggle terminal",
 		},
+
+		["<leader>bp"] = { "<cmd>BufferLinePick<CR>", "Pick buffer" },
+		["<leader>bc"] = { "<cmd>BufferLinePickClose<CR>", "Close a buffer" },
+		["<leader>bh"] = { "<cmd>BufferLineCloseLeft<CR>", "Close all buffer on the left" },
+		["<leader>bl"] = { "<cmd>BufferLineCloseRight<CR>", "Close all buffer on the right" },
+		["<tab>"] = { "<cmd>BufferLineCycleNext<CR>", "Next buffer" },
+		["<s-tab>"] = { "<cmd>BufferLineCyclePrev<CR>", "Prev buffer" },
 	},
 	v = {
 		[">"] = { ">gv", "indent" },
