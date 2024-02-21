@@ -4,6 +4,7 @@ M.disabled = {
 	t = {
 		["<C-x>"] = "",
 		["<C-j>"] = "",
+		["<C-h>"] = "",
     ["<S-tab>"] = "",
     ["<TAB>"] = ""
 	},
@@ -45,6 +46,10 @@ M.general = {
 			":ToggleTerm direction=float<CR>",
 			"toggle terminal",
 		},
+		["<C-h>"] = {
+			":ToggleTerm direction=horizontal<CR>",
+			"toggle terminal",
+		},
 
 		["<leader>bp"] = { "<cmd>BufferLinePick<CR>", "Pick buffer" },
 		["<leader>bc"] = { "<cmd>BufferLinePickClose<CR>", "Close a buffer" },
@@ -58,6 +63,10 @@ M.general = {
 	},
 	t = {
 		["<c-j>"] = {
+			"<cmd>ToggleTerm<CR>",
+			"toggle terminal",
+		},
+		["<c-h>"] = {
 			"<cmd>ToggleTerm<CR>",
 			"toggle terminal",
 		},
