@@ -13,9 +13,10 @@
         "<C-b>": false,
         "<C-j>": false
     },
+    "vim.useSystemClipboard": true,
     "explorer.confirmDelete": false,
     "editor.cursorStyle": "block",
     "extensions.ignoreRecommendations": true,
-    "git.openRepositoryInParentFolders": "always"
+    "git.openRepositoryInParentFolders": "always",
+    "editor.minimap.enabled": false
 }
-
