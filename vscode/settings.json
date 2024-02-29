@@ -17,6 +17,5 @@
     "explorer.confirmDelete": false,
     "editor.cursorStyle": "block",
     "extensions.ignoreRecommendations": true,
-    "git.openRepositoryInParentFolders": "always",
-    "editor.minimap.enabled": false
+    "git.openRepositoryInParentFolders": "always"
 }
